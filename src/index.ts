@@ -35,3 +35,6 @@ export type { ButtonGroupProps, ButtonGroupOrientation } from './components/Butt
 
 export { SocialButton } from './components/SocialButton';
 export type { SocialButtonProps, SocialPlatform, SocialButtonStyle, SocialButtonSize } from './components/SocialButton';
+
+export { Badge, BadgeGroup } from './components/Badge';
+export type { BadgeProps, BadgeSize, BadgeColor, BadgeType, BadgeGroupProps } from './components/Badge';

@@ -1,0 +1,11 @@
+.badge-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    /* Standard spacing for badges */
+    align-items: center;
+}
+
+.badge-group--full-width {
+    width: 100%;
+}
