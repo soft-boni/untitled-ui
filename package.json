@@ -1,62 +1,35 @@
 {
-    "name": "@boni/untitled-ui",
-    "version": "0.1.0",
-    "description": "A comprehensive React design system with design tokens and components",
-    "main": "./dist/index.js",
-    "module": "./dist/index.mjs",
-    "types": "./dist/index.d.ts",
-    "exports": {
-        ".": {
-            "import": "./dist/index.mjs",
-            "require": "./dist/index.js",
-            "types": "./dist/index.d.ts"
-        },
-        "./tokens": {
-            "import": "./dist/tokens/index.mjs",
-            "require": "./dist/tokens/index.js",
-            "types": "./dist/tokens/index.d.ts"
-        }
-    },
-    "files": [
-        "dist",
-        "public"
-    ],
-    "scripts": {
-        "build:icons": "node scripts/build-icons.js",
-        "build:package": "tsup",
-        "build": "npm run build:icons && npm run build:package",
-        "type-check": "tsc --noEmit",
-        "lint": "eslint src --ext .ts,.tsx",
-        "dev": "tsup --watch"
-    },
-    "peerDependencies": {
-        "react": "^18.0.0",
-        "react-dom": "^18.0.0"
-    },
-    "devDependencies": {
-        "@types/react": "^18.2.48",
-        "@types/react-dom": "^18.2.18",
-        "@typescript-eslint/eslint-plugin": "^6.19.0",
-        "@typescript-eslint/parser": "^6.19.0",
-        "eslint": "^8.56.0",
-        "tsup": "^8.0.1",
-        "typescript": "^5.3.3"
-    },
-    "keywords": [
-        "react",
-        "design-system",
-        "ui",
-        "components",
-        "design-tokens"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/soft-boni/untitled-ui.git"
-    },
-    "bugs": {
-        "url": "https://github.com/soft-boni/untitled-ui/issues"
-    },
-    "homepage": "https://github.com/soft-boni/untitled-ui#readme",
-    "author": "Boni",
-    "license": "MIT"
+  "name": "untitled-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "generate-tokens": "node scripts/generate-tokens.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soft-boni/untitled-ui.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soft-boni/untitled-ui/issues"
+  },
+  "homepage": "https://github.com/soft-boni/untitled-ui#readme",
+  "dependencies": {
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.7",
+    "@types/react": "^19.2.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1"
+  }
 }

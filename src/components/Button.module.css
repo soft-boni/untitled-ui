@@ -1,0 +1,258 @@
+/* Button.module.css */
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family-body, sans-serif);
+    font-weight: 600;
+    /* Text md/Semibold */
+    cursor: pointer;
+    transition: all 0.2sease;
+    text-decoration: none;
+    border: 1px solid transparent;
+    /* Default border */
+    white-space: nowrap;
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* SIZES */
+/* Padding derived from Figma metadata height / text size ratios or standard design system norms */
+/* sm */
+.size-sm {
+    height: 36px;
+    padding: 8px 12px;
+    gap: 4px;
+    border-radius: var(--radius-md, 8px);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* md */
+.size-md {
+    height: 40px;
+    padding: 10px 14px;
+    gap: 4px;
+    border-radius: var(--radius-md, 8px);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/* lg */
+.size-lg {
+    height: 44px;
+    padding: 10px 16px;
+    gap: 6px;
+    border-radius: var(--radius-md, 8px);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* xl */
+.size-xl {
+    height: 48px;
+    padding: 12px 18px;
+    gap: 6px;
+    border-radius: var(--radius-md, 8px);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* 2xl */
+.size-2xl {
+    height: 60px;
+    padding: 16px 22px;
+    gap: 10px;
+    border-radius: var(--radius-lg, 10px);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+/* Icon Only adjustments - padding usually equals (height - iconSize) / 2 */
+.iconOnly.size-sm {
+    padding: 8px;
+}
+
+.iconOnly.size-md {
+    padding: 10px;
+}
+
+.iconOnly.size-lg {
+    padding: 10px;
+}
+
+.iconOnly.size-xl {
+    padding: 12px;
+}
+
+.iconOnly.size-2xl {
+    padding: 16px;
+}
+
+
+/* HIERARCHY */
+
+/* Primary */
+.primary {
+    background: var(--colors-background-bg-brand-solid, #7F56D9);
+    border: 2px solid rgba(255, 255, 255, 0.12);
+    /* Specific gradient border fallback */
+    color: var(--colors-base-white, #FFFFFF);
+    /* Shadows/shadow-xs-skeuomorphic */
+    box-shadow: 0 0 0 1px inset rgba(10, 13, 18, 0.18), 0 -2px 0 0 inset rgba(10, 13, 18, 0.05), 0 1px 2px 0 rgba(10, 13, 18, 0.05);
+}
+
+.primary:hover:not(:disabled) {
+    background: var(--colors-background-bg-brand-solid-hover, #6941C6);
+    border-color: var(--colors-background-bg-brand-solid-hover, #6941C6);
+}
+
+.primary:focus:not(:disabled) {
+    box-shadow: 0 0 0 4px var(--colors-effects-focus-rings-focus-ring, #9E77ED), 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.primary:disabled {
+    background: var(--colors-background-bg-disabled, #F2F4F7);
+    border-color: var(--colors-background-bg-disabled, #F2F4F7);
+    color: var(--colors-text-text-disabled, #98A2B3);
+    box-shadow: none;
+}
+
+.primary svg {
+    stroke: var(--component-colors-components-buttons-button-primary-icon, currentColor);
+}
+
+.primary:hover:not(:disabled) svg {
+    stroke: var(--component-colors-components-buttons-button-primary-icon-hover, currentColor);
+}
+
+
+/* Secondary */
+.secondary {
+    background: var(--colors-base-white, #FFFFFF);
+    border: 1px solid var(--colors-border-border-primary, #D0D5DD);
+    color: var(--colors-text-text-secondary-700, #344054);
+    box-shadow: 0 1px 2px 0 var(--colors-effects-shadows-shadow-xs, rgba(16, 24, 40, 0.05));
+}
+
+.secondary:hover:not(:disabled) {
+    background: var(--colors-background-bg-secondary-hover, #F9FAFB);
+    color: var(--colors-text-text-secondary-hover, #182230);
+    border-color: var(--colors-border-border-secondary, #D0D5DD);
+    /* usually stays same or slightly darker */
+}
+
+.secondary:focus:not(:disabled) {
+    box-shadow: 0 0 0 4px var(--colors-effects-focus-rings-focus-ring, #9E77ED), 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.secondary:disabled {
+    background: var(--colors-base-white, #FFFFFF);
+    border-color: var(--colors-border-border-disabled, #EAECF0);
+    color: var(--colors-text-text-disabled, #98A2B3);
+    box-shadow: none;
+}
+
+
+/* Tertiary */
+.tertiary {
+    background: transparent;
+    border-color: transparent;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    box-shadow: none;
+}
+
+.tertiary:hover:not(:disabled) {
+    background: var(--colors-background-bg-secondary-hover, #F9FAFB);
+    color: var(--colors-text-text-tertiary-hover, #344054);
+}
+
+.tertiary:disabled {
+    color: var(--colors-text-text-disabled, #98A2B3);
+}
+
+
+/* Link Color */
+.linkColor {
+    background: transparent;
+    border-color: transparent;
+    color: var(--colors-text-text-brand-tertiary-600, #6941C6);
+    padding: 0;
+    /* Links usually have no padding */
+    height: auto;
+    box-shadow: none;
+}
+
+.linkColor:hover:not(:disabled) {
+    color: var(--colors-text-text-brand-secondary-hover, #53389E);
+}
+
+.linkColor:disabled {
+    color: var(--colors-text-text-disabled, #98A2B3);
+}
+
+
+/* Link Gray */
+.linkGray {
+    background: transparent;
+    border-color: transparent;
+    color: var(--colors-text-text-tertiary-600, #475467);
+    padding: 0;
+    height: auto;
+    box-shadow: none;
+}
+
+.linkGray:hover:not(:disabled) {
+    color: var(--colors-text-text-tertiary-hover, #344054);
+}
+
+.linkGray:disabled {
+    color: var(--colors-text-text-disabled, #98A2B3);
+}
+
+/* Destructive Primary */
+.destructivePrimary {
+    background: var(--colors-background-bg-error-solid, #D92D20);
+    border: 1px solid var(--colors-background-bg-error-solid, #D92D20);
+    color: var(--colors-base-white, #FFFFFF);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.destructivePrimary:hover:not(:disabled) {
+    background: var(--colors-background-bg-error-solid-hover, #B42318);
+    border-color: var(--colors-background-bg-error-solid-hover, #B42318);
+}
+
+.destructivePrimary:focus:not(:disabled) {
+    box-shadow: 0 0 0 4px var(--colors-effects-focus-rings-focus-ring-error, #FEE4E2), 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.destructivePrimary svg {
+    stroke: var(--component-colors-components-buttons-button-destructive-primary-icon, currentColor);
+}
+
+.destructivePrimary:hover:not(:disabled) svg {
+    stroke: var(--component-colors-components-buttons-button-destructive-primary-icon-hover, currentColor);
+}
+
+/* Destructive Secondary */
+.destructiveSecondary {
+    background: var(--colors-base-white, #FFFFFF);
+    border: 1px solid var(--colors-border-border-error, #FDA29B);
+    color: var(--colors-text-text-error-primary-600, #D92D20);
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}
+
+.destructiveSecondary:hover:not(:disabled) {
+    background: var(--colors-background-bg-error-primary, #FEF3F2);
+    color: var(--colors-text-text-error-primary-hover, #B42318);
+    border-color: var(--colors-border-border-error, #FDA29B);
+}
+
+.destructiveSecondary:focus:not(:disabled) {
+    box-shadow: 0 0 0 4px var(--colors-effects-focus-rings-focus-ring-error, #FEE4E2), 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+}

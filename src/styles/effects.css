@@ -1,0 +1,52 @@
+/* EFFECTS TOKENS */
+:root {
+  --colors-effects-focus-rings-focus-ring: var(--colors-brand-500);
+  --colors-effects-focus-rings-focus-ring-error: var(--colors-error-500);
+  --colors-effects-shadows-shadow-xs: #0A0D12;
+  --colors-effects-shadows-shadow-sm-01: #0A0D12;
+  --colors-effects-shadows-shadow-sm-02: #0A0D12;
+  --colors-effects-shadows-shadow-md-01: #0A0D12;
+  --colors-effects-shadows-shadow-md-02: #0A0D12;
+  --colors-effects-shadows-shadow-lg-01: #0A0D12;
+  --colors-effects-shadows-shadow-lg-02: #0A0D12;
+  --colors-effects-shadows-shadow-lg-03: #0A0D12;
+  --colors-effects-shadows-shadow-xl-01: #0A0D12;
+  --colors-effects-shadows-shadow-xl-02: #0A0D12;
+  --colors-effects-shadows-shadow-xl-03: #0A0D12;
+  --colors-effects-shadows-shadow-2xl-01: #0A0D12;
+  --colors-effects-shadows-shadow-2xl-02: #0A0D12;
+  --colors-effects-shadows-shadow-3xl-01: #0A0D12;
+  --colors-effects-shadows-shadow-3xl-02: #0A0D12;
+  --colors-effects-shadows-shadow-skeumorphic-inner: #0A0D12;
+  --colors-effects-shadows-shadow-skeumorphic-inner-border: #0A0D12;
+  --colors-effects-portfolio-mockups-shadow-main-centre-md: #0A0D12;
+  --colors-effects-portfolio-mockups-shadow-main-centre-lg: #0A0D12;
+  --colors-effects-portfolio-mockups-shadow-overlay-lg: #0A0D12;
+  --colors-effects-portfolio-mockups-shadow-grid-md: #0A0D12;
+}
+
+[data-theme="dark"] {
+  --colors-effects-focus-rings-focus-ring: var(--colors-brand-500);
+  --colors-effects-focus-rings-focus-ring-error: var(--colors-error-500);
+  --colors-effects-shadows-shadow-xs: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-sm-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-sm-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-md-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-md-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-lg-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-lg-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-lg-03: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-xl-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-xl-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-xl-03: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-2xl-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-2xl-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-3xl-01: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-3xl-02: var(--colors-base-transparent);
+  --colors-effects-shadows-shadow-skeumorphic-inner: #0C0E12;
+  --colors-effects-shadows-shadow-skeumorphic-inner-border: #0C0E12;
+  --colors-effects-portfolio-mockups-shadow-main-centre-md: var(--colors-base-transparent);
+  --colors-effects-portfolio-mockups-shadow-main-centre-lg: var(--colors-base-transparent);
+  --colors-effects-portfolio-mockups-shadow-overlay-lg: var(--colors-base-transparent);
+  --colors-effects-portfolio-mockups-shadow-grid-md: var(--colors-base-transparent);
+}
